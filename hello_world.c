@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main()
-{
-printf("My name is Mourya B D\n");
-  return 0;
-} 
+  {
+    printf("My name is Mourya B D\n");
+    return 0;
+  } 
+
