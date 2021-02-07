@@ -2,24 +2,28 @@
 #include<stdio.h>
 float input()
 {
-float num;
-printf("Enter the number:");
-scanf("%f",&num);
-return num ;
+    float num;
+    printf("Enter the number:");
+    scanf("%f",&num);
+    return num ;
 }
-float sum(float num1,num2)
+    float sum(float num1,float num2)
 {
-float sum;
-sum=num1+num2;
-return sum;
-printf("Sum of two number is %f",num);
+    float sum;
+    sum=num1+num2;
+    return sum;
 }
-int main()
+    void output(float num)
 {
-float a,b,s;
-a=input();
-b=input();
-s=sum(a,b);
-output(s);
-return 0;
+    printf("Sum of two number is %f",num);
 }
+    int main()
+{
+    float a,b,s;
+    a=input();
+    b=input();
+    s=sum(a,b);
+    output(s);
+    return 0;
+}
+
