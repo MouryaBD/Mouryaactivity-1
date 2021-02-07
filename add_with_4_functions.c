@@ -13,9 +13,10 @@ float input()
     sum=num1+num2;
     return sum;
 }
-    void output(float num)
+    void output(float x,float y,float num)
 {
-    printf("Sum of two number is %f",num);
+    printf("Sum of %f and %f is  %f",x,y,num);
+    return 0;
 }
     int main()
 {
@@ -23,7 +24,6 @@ float input()
     a=input();
     b=input();
     s=sum(a,b);
-    output(s);
+    output(a,b,s);
     return 0;
 }
-
