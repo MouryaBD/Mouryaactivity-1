@@ -3,7 +3,7 @@
 float input()
 {
     float num;
-    printf("Enter the value:");
+    printf("Enter the value of h in 1st entry,d in 2nd entry and b in 3rd entry respectively:");
     scanf("%f",&num);
     return num;
 }
@@ -26,4 +26,3 @@ float input()
     output(v);
     return 0;
 }
-
