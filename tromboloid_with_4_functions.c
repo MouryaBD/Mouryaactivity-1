@@ -3,26 +3,25 @@
 float input()
 {
     float num;
-      printf("Enter the value of h in 1st entry,d in 2nd entry and b in 3rd entry respectively:");
-      scanf("%f",&num);
+    printf("Enter the value of h in 1st entry,d in 2nd entry and b in 3rd entry respectively:");
+    scanf("%f", & num);
     return num;
 }
-    float volume(float h,float d,float b)
+float volume(float h, float d, float b)
 {
-    float volume=(((h*d*b)+(d/b))/3);
+    float volume = (((h * d * b) + (d / b)) / 3);
     return volume;
 }
-    float output(float volume)
+float output(float volume)
 {
-    printf("Volume of tromboloid is %f",volume);
+    printf("Volume of tromboloid is %f", volume);
 }
-    int main()
-{
-    float h,d,b,v;
-      h=input(h);
-      d=input(d);
-      b=input(b);
-      v=volume(h,d,b);
-      output(v);
+int main() {
+    float h, d, b, v;
+    h = input(h);
+    d = input(d);
+    b = input(b);
+    v = volume(h, d, b);
+    output(v);
     return 0;
 }
