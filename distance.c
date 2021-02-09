@@ -11,8 +11,9 @@ float dis_btw_2pts(float x1,float x2,float y1,float y2){
     float dis_btw_2pts=sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
     return dis_btw_2pts;
 }
-void answer(float dis_btw_2pts){
-    printf("Distance between two points  is %f ",dis_btw_2pts);
+void answer(float x1,float x2,float y1,float y2,float dis_btw_2pts){
+   
+    printf("Distance between (%f,%f) and (%f,%f) points is %f ",x1,x2,y1,y2,dis_btw_2pts);
     
 }
 int main(){
@@ -22,6 +23,6 @@ int main(){
     y1=input('y',1);
     y2=input('y',2);
     len=dis_btw_2pts(x2,x1,y2,y1);
-    answer(len);
+    answer(x1,x2,y1,y2,len);
     return 0;
 }
