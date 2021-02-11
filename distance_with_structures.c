@@ -8,7 +8,7 @@ struct position {
 };
 float input(char q, int k) {
     struct position u;
-    printf("\nEnter the value of the coordinate %c%d:\n", q, k);
+    printf("Enter the value of the coordinate %c%d:", q, k);
     scanf("%f", & u.pos_val);
 
 }
