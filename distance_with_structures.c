@@ -25,7 +25,7 @@ int main() {
     x2 = input('x', 2);
     y1 = input('y', 1);
     y2 = input('y', 2);
-    len = dis_btw_2pts(x2, x1, y2, y1);
+    len = dis_btw_2pts(x1,x2, y1,y2);
     answer(x1, x2, y1, y2, len);
     return 0;
 }
