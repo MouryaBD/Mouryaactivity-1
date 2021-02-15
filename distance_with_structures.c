@@ -8,9 +8,9 @@ typedef struct {
 position;
 position input(int k) {
     position u;
-    printf("Enter the value of the coordinate x%d:", k);
+    printf("Enter the value of the coordinate x%d:\n", k);
     scanf("%f", & u.pos_val_x);
-    printf("Enter the value of the coordinate y%d:", k);
+    printf("Enter the value of the coordinate y%d:\n", k);
     scanf("%f", & u.pos_val_y);
     return u;
 }
@@ -19,7 +19,7 @@ float dis_btw_2pts(position first, position second) {
     return dis_btw_2pts;
 }
 float answer(position first, position second, float dis_btw_2pts) {
-    printf("Distance between (%f,%f) and (%f,%f) is %f", first.pos_val_x, first.pos_val_y, second.pos_val_x, second.pos_val_y, dis_btw_2pts);
+    printf("Distance between (%f,%f) and (%f,%f) is %f\n", first.pos_val_x, first.pos_val_y, second.pos_val_x, second.pos_val_y, dis_btw_2pts);
 }
 int main() {
     position first, second;
