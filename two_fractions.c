@@ -16,7 +16,7 @@ float calc_2_fra(add_2_fra first, add_2_fra second) {
     float calc_2_fra = ((first.val_nume / first.val_deno) + (second.val_nume / second.val_deno));
     return calc_2_fra;
 }
-float result(add_2_fra first, add_2_fra second, float calc_2_fra) {
+void result(add_2_fra first, add_2_fra second, float calc_2_fra) {
     printf("Addition of fraction (%f/%f) and (%f/%f) is %f \n", first.val_nume, first.val_deno, second.val_nume, second.val_deno, calc_2_fra);
 }
 int main() {
