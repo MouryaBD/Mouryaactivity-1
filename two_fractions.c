@@ -13,18 +13,21 @@ add_2_fra input(int k) {
     return u;
 }
 float calc_2_fra(add_2_fra first, add_2_fra second) {
-    float calc_2_fra = ((first.val_nume / first.val_deno) + (second.val_nume / second.val_deno));
+    float calc_2_fra = (((first.val_nume*second.val_deno)+(second.val_nume*first.val_deno))/(first.val_deno*second.val_deno));
     return calc_2_fra;
 }
-void result(add_2_fra first, add_2_fra second, float calc_2_fra) {
-    printf("Addition of fraction (%f/%f) and (%f/%f) is %f \n", first.val_nume, first.val_deno, second.val_nume, second.val_deno, calc_2_fra);
+void result(add_2_fra first, add_2_fra second,float calc_2_fra, float nume,float deno) {
+    printf("Addition of fraction (%f/%f) and (%f/%f) is %f,that is in fraction (%f/%f) \n", first.val_nume, first.val_deno, second.val_nume, second.val_deno,calc_2_fra, nume,deno);
 }
 int main() {
     add_2_fra first, second;
-    float sum;
+    float sum,nume,deno;
     first = input(1);
     second = input(2);
-    sum = calc_2_fra(first, second);
-    result(first, second, sum);
+    sum = calc_2_fra(first,second);
+    nume=(first.val_nume*second.val_deno)+(second.val_nume*first.val_deno);
+    deno=(first.val_deno*second.val_deno);
+    result(first, second,sum,nume,deno);
     return 0;
 }
+
