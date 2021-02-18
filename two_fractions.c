@@ -1,16 +1,16 @@
 //WAP to find the sum of two fractions.
 #include<stdio.h>
 typedef struct {
-    float val_nume;
-    float val_deno;
+    int val_nume;
+    int val_deno;
 }add_2_fra;
 
 add_2_fra input(int k) {
     add_2_fra u;
     printf("Enter the value of the numerator %d:\n", k);
-    scanf("%f", & u.val_nume);
+    scanf("%d", & u.val_nume);
     printf("Enter the value of the denominator %d:\n", k);
-    scanf("%f", & u.val_deno);
+    scanf("%d", & u.val_deno);
     return u;
 }
 
@@ -31,7 +31,7 @@ void calc_2_fra(add_2_fra first, add_2_fra second) {
    int common_factor = gcd(third.val_nume, third.val_deno);
    int d = third.val_deno/common_factor;
    int n = third.val_nume/common_factor;
-   printf("Addition of fraction (%f/%f) and (%f/%f) is (%d/%d) \n", first.val_nume, first.val_deno, second.val_nume, second.val_deno, n,d);
+   printf("Addition of fraction (%d/%d) and (%d/%d) is (%d/%d) \n", first.val_nume, first.val_deno, second.val_nume, second.val_deno, n,d);
    
 }
 
