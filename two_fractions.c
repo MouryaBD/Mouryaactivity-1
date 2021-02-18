@@ -29,9 +29,9 @@ void calc_2_fra(add_2_fra first, add_2_fra second) {
    third.val_nume = (first.val_nume)*(third.val_deno/first.val_deno) + (second.val_nume)*(third.val_deno/second.val_deno);
    
    int common_factor = gcd(third.val_nume, third.val_deno);
-   float d = third.val_deno/common_factor;
-   float n = third.val_nume/common_factor;
-   printf("Addition of fraction (%f/%f) and (%f/%f) is (%f/%f) \n", first.val_nume, first.val_deno, second.val_nume, second.val_deno, n,d);
+   int d = third.val_deno/common_factor;
+   int n = third.val_nume/common_factor;
+   printf("Addition of fraction (%f/%f) and (%f/%f) is (%d/%d) \n", first.val_nume, first.val_deno, second.val_nume, second.val_deno, n,d);
    
 }
 
