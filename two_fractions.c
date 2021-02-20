@@ -17,16 +17,16 @@ fraction input(int k) {
 }
 
 int gcd(int a, int b) {
-    while (a != b) {
-        if (a > b)
-            a = a - b;
-        else
-            b = b - a;
+    while (a!=b){
+        if(a>b)
+        a=a-b;
+        else 
+        b=b-a;
     }
     return a;
 }
 
-fraction calc_2_fra(fraction first, fraction second) {
+fraction calculate(fraction first, fraction second) {
     fraction third;
 
     third.val_deno = gcd(first.val_deno, second.val_deno);
@@ -49,7 +49,9 @@ int main() {
     fraction first, second, sum;
     first = input(1);
     second = input(2);
-    sum = calc_2_fra(first, second);
+    sum = calculate(first, second);
     result(first, second, sum);
     return 0;
 }
+
+
