@@ -1,6 +1,5 @@
 //Write a program to find the sum of n different numbers using 4 functions
 #include<stdio.h>
-
 int arr[];
 int input_num() {
     int num;
@@ -13,8 +12,8 @@ int* input_value(int num,int arr[]){
     for (a = 0; a <num; a++){
     printf("Enter the number %dth  value :",a+1);
     scanf("%d", &arr[a]);
-        
-    }return arr;
+    }
+    return arr;
 }
 int sumof_n_num(int num,int arr[num]) {
    int a, sum = 0;
@@ -23,14 +22,13 @@ int sumof_n_num(int num,int arr[num]) {
     }
     return sum;
 }
-
 void resultof_sum(int num, int sum,int*arr) {
     int a; 
-    printf("The listed  numbers are   ");
+    printf("The listed  numbers are ");
     for(a=0;a<num;a++){
     printf(" %d,",arr[a]);
     }
-    printf(" who's value is summed to get %d",sum);
+    printf(" whose value is summed to get %d",sum);
 }
 int main() {
     int num,sum,*result;
