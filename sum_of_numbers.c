@@ -2,14 +2,14 @@
 #include<stdio.h>
 float input_num() {
     float num;
-    printf("Enter the number of values to be summed :");
+    printf("Enter the number of values to be summed :\n");
     scanf("%f", & num);
     return num;
 }
 float* input_value(float num,float arr[]){
     int a ;
     for (a = 0; a <num; a++){
-    printf("Enter the number %dth  value :",a+1);
+    printf("Enter the number %dth  value :\n",a+1);
     scanf("%f", &arr[a]);
     }
     return arr;
@@ -28,7 +28,7 @@ void resultof_sum(float num, float sum,float*arr) {
     for(a=0;a<num;a++){
     printf(" %f,",arr[a]);
     }
-    printf(" whose value is summed to get %f",sum);
+    printf(" whose value is summed to get %f\n",sum);
 }
 int main() {
     float sum,*result;
