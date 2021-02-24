@@ -6,13 +6,13 @@ float input_num() {
     scanf("%f", & num);
     return num;
 }
-float* input_value(float num,float arr[]){
+void* input_value(float num,float arr[]){
     int a ;
     for (a = 0; a <num; a++){
     printf("Enter the number %dth  value :\n",a+1);
     scanf("%f", &arr[a]);
     }
-    return arr;
+
 }
 float sumof_n_num(float num,float arr[]) {
    int a;
@@ -35,8 +35,8 @@ int main() {
     int num;
     num = input_num();
     float arr[num] ;
-    result=input_value(num,arr);
-    sum=sumof_n_num(num,result);
-    resultof_sum( num,sum,result);
+    input_value(num,arr);
+    sum=sumof_n_num(num,arr);
+    resultof_sum( num,sum,arr);
     return 0;
 }
