@@ -1,12 +1,12 @@
 //Write a program to find the sum of n different numbers using 4 functions
 #include<stdio.h>
-float input_num() {
-    float num;
+int input_num() {
+    int num;
     printf("Enter the number of values to be summed :\n");
-    scanf("%f", & num);
+    scanf("%d", & num);
     return num;
 }
-void* input_value(float num,float arr[]){
+int input_value(int num,float arr[]){
     int a ;
     for (a = 0; a <num; a++){
     printf("Enter the number %dth  value :\n",a+1);
@@ -14,7 +14,7 @@ void* input_value(float num,float arr[]){
     }
 
 }
-float sumof_n_num(float num,float arr[]) {
+float sumof_n_num(int num,float arr[]) {
    int a;
    float sum = 0;
    for(a=0;a<num;a++){
@@ -22,7 +22,7 @@ float sumof_n_num(float num,float arr[]) {
     }
     return sum;
 }
-void resultof_sum(float num, float sum,float*arr) {
+void resultof_sum(int num, float sum,float*arr) {
     int a; 
     printf("The listed  numbers are ");
     for(a=0;a<num;a++){
@@ -31,7 +31,7 @@ void resultof_sum(float num, float sum,float*arr) {
     printf(" whose value is summed to get %f\n",sum);
 }
 int main() {
-    float sum,*result;
+    float sum;
     int num;
     num = input_num();
     float arr[num] ;
