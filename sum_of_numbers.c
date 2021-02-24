@@ -6,7 +6,7 @@ int input_num() {
     scanf("%d", & num);
     return num;
 }
-int input_value(int num,float arr[]){
+void input_value(int num,float arr[]){
     int a ;
     for (a = 0; a <num; a++){
     printf("Enter the number %dth  value :\n",a+1);
