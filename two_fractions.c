@@ -29,16 +29,13 @@ int gcd(int a, int b) {
 fraction calculate(fraction first, fraction second) {
     fraction third;
 
-    third.val_deno = gcd(first.val_deno, second.val_deno);
+int mygcd = gcd(first.val_deno, second.val_deno);
 
-    third.val_deno = (first.val_deno * second.val_deno) / third.val_deno;
+    third.val_deno = (first.val_deno * second.val_deno) / mygcd;
 
     third.val_nume = (first.val_nume) * (third.val_deno / first.val_deno) + (second.val_nume) * (third.val_deno / second.val_deno);
 
-    int common_factor = gcd(third.val_nume, third.val_deno);
-    third.val_deno = third.val_deno / common_factor;
-    third.val_nume = third.val_nume / common_factor;
-    return third;
+return third;
 }
 void result(fraction first, fraction second, fraction sum) {
     printf("Addition of fraction (%d/%d) and (%d/%d) is (%d/%d) \n", first.val_nume, first.val_deno, second.val_nume, second.val_deno, sum.val_nume, sum.val_deno);
@@ -53,5 +50,4 @@ int main() {
     result(first, second, sum);
     return 0;
 }
-
 
