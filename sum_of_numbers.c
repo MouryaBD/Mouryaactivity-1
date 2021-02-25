@@ -6,7 +6,7 @@ int input_num() {
     scanf("%d", & num);
     return num;
 }
-void input_value(int num,float arr[]){
+int input_value(int num,float arr[]){
     int a ;
     for (a = 0; a <num; a++){
     printf("Enter the number %dth  value :\n",a+1);
@@ -22,7 +22,7 @@ float sumof_n_num(int num,float arr[]) {
     }
     return sum;
 }
-void resultof_sum(int num, float sum,float*arr) {
+void resultof_sum(int num,float sum,float arr[]) {
     int a; 
     printf("The listed  numbers are ");
     for(a=0;a<num;a++){
