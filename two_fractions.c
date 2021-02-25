@@ -34,6 +34,10 @@ int mygcd = gcd(first.val_deno, second.val_deno);
     third.val_deno = (first.val_deno * second.val_deno) / mygcd;
 
     third.val_nume = (first.val_nume) * (third.val_deno / first.val_deno) + (second.val_nume) * (third.val_deno / second.val_deno);
+ int common_factor = gcd(third.val_nume, third.val_deno);
+    third.val_deno = third.val_deno / common_factor;
+    third.val_nume = third.val_nume / common_factor;
+
 
 return third;
 }
