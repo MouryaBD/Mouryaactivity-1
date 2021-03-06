@@ -35,8 +35,8 @@ fraction calculate(fraction first, fraction second) {
     third.val_nume = third.val_nume / common_factor;
     return third;
 }
-void result(fraction first, fraction second, fraction sum) {
-    printf("Addition of fraction (%d/%d) and (%d/%d) is (%d/%d) \n", first.val_nume, first.val_deno, second.val_nume, second.val_deno, sum.val_nume, sum.val_deno);
+void result(fraction first, fraction second, fraction third) {
+    printf("Addition of fraction (%d/%d) and (%d/%d) is (%d/%d) \n", first.val_nume, first.val_deno, second.val_nume, second.val_deno, third.val_nume, third.val_deno);
 
 }
 
